@@ -26,11 +26,3 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
 });
-
-$('[data-fancybox]').fancybox({
-
-    caption: function (instance, item) {
-        return ($(this).find('figcaption').html());
-    }
-
-});

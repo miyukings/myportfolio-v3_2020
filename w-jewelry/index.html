@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Miyuki Sekiguchi | Jewelry Design and Making</title>
-    <meta name="description" content="This is a jewelry design page that is part of Miyuki Sekiguchi's Portfolio" />
+    <title>John Doe | David Sedaris Book</title>
+    <meta name="description" content="This is a custom book cover that is part of John Doe's Portfolio" />
 
     <!-- VIEWPORT FOR MOBILE -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,18 +12,11 @@
     <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet" />
 
-    <!-- ADOBE FONT -->
-    <link rel="stylesheet" href="https://use.typekit.net/bnm7oer.css">
-
     <!-- MAIN CSS FILE -->
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
 
     <!-- CSS FOR FANCYBOX -->
-    <link href="../css/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/jquery.fancybox.css" rel="stylesheet" type="text/css">
-
-    <!-- FOR IE -->
-
+    <link rel="stylesheet" type="text/css" href="../js/fancybox/dist/jquery.fancybox.min.css">
 
 </head>
 
@@ -42,8 +35,13 @@
     </header>
 
     <main>
+        <!-- 
+        <section class="hero revealer">
+            <img src="../img/placeholder-4x1-hero-book.gif" alt="Sedaris Book Cover Designs Stacked" />
+        </section> -->
 
-        <section class="projectinfo">
+
+        <section class="projectinfo content">
             <div class="container revealer">
                 <h1 class="headline">Jewelry Design and&nbsp;Making</h1>
                 <h2 class="subheadline">Unique and Fun custom jewelry</h2>
@@ -53,15 +51,15 @@
                     three times!!! There are some of my work&nbsp;below.</p>
             </div>
         </section>
-
         <section class="text-centered">
 
             <ul class="thumbgrid fade-in-and-down">
 
                 <!-- 1 -->
-                <li><a data-fancybox="gallery" href="../img/FlowerBangle1000x1000.jpg"><img
+                <li><a href="../img/FlowerBangle1000x1000.jpg" data-fancybox="gallery"
+                        data-caption="Mixed Materials Flower Bangle - description goes here"><img
                             src="../img/FlowerBangle1000x1000.jpg" alt="Flower Bangle" /></a>
-                    <P>Mixed Materials Flower Bangle</P>
+                    <p>Mixed Materials Flower Bangle</p>
                 </li>
 
                 <!-- 2 -->
@@ -108,8 +106,6 @@
 
             </ul>
         </section>
-
-
         <section class="col-imagesmaller dark">
             <div class="container revealer">
                 <div class="subcontent-image">
@@ -136,31 +132,32 @@
                 </div>
             </div>
         </section>
-        <section class="col-imagesmaller dark">
-            <div class="container revealer">
-                <div class="subcontent-image">
-                    <img src="../img/flower-ingot1000x1000.jpg" alt="Flowre Ingot Ring" />
-                </div>
-                <div class="subcontent-text">
-                    <h3>About</h3>
-                    <p>These art pieces were created as part of a school project and my private projects. The course I
-                        took was ART 106J Jewelry/Sculpture at Kapiolani Community&nbsp;College.</p>
-                    <ul class="meta-list">
 
-                        <li><span>Deliverable:</span> Ring, Bangle, Bracelet, Container</li>
-                        <li><span>Year:</span> ~2017</li>
-                        <li><span>Medium:</span> Silver, Copper, Nikel Silver, Brass, Turquoise</li>
-                        <li><span>Tags:</span> Sculpture</li>
-                    </ul>
+        <section class="meta-info col-imagesmaller">
+            <div class="container revealer">
+                <!-- <div class="subcontent-image">
+                    <img src="../w-jewelry/img/flower-ingot1000x1000.jpg" alt="Flower Ingot Ring" />
+                </div> -->
+                <div class="meta-text">
+                    <h3>About</h3>
+                    <p>These art pieces were created as part of a school project and personal projects. The course I
+                        took was ART 106J Jewelry/Sculpture at Kapi‘olani Community&nbsp;College.</p>
                 </div>
+                <ul class="meta-list">
+                    <li><span>Deliverable:</span> Ring, Bangle, Bracelet, Container</li>
+                    <li><span>Year:</span> ~2017</li>
+                    <li><span>Medium:</span> Silver, Copper, Nikel Silver, Brass, Turquoise</li>
+                    <li><span>Tags:</span> Sculpture</li>
+                </ul>
             </div>
         </section>
-
-
-
+        <!-- 
         <section class="text-centered revealer">
-            <a href="../work.html" class="button">Back to Work Page</a>
-        </section>
+            <a href="../work.html" class="button">See More Work</a>
+        </section> -->
+
+
+
 
 
     </main>
@@ -174,9 +171,13 @@
         </nav>
     </footer>
 
+
+    <!-- FANCYBOX 3 JS FILE -->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../js/fancybox/dist/jquery.fancybox.min.js"></script>
+
+    <!-- MAIN JS -->
     <script src="../js/scripts.js"></script>
-    <script src="..js/jquery.fancybox.js"></script>
-    <script src="../js/jquery.fancybox.min.js"></script>
 
 </body>
 

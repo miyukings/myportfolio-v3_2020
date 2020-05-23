@@ -13,11 +13,10 @@
 */
 
 body {
-  /* font-family: "cronos-pro", sans-serif; */
   font-family: utopia-std, serif;
   font-weight: 400;
-  letter-spacing: 0.05em;
   font-size: 87.5%; /* 14px */
+  letter-spacing: 0.05em;
   color: rgba(0, 0, 0, 0.7);
   padding: 1em;
   max-width: 1000px;
@@ -37,6 +36,20 @@ a:hover {
   color: rgb(102, 63, 43);
 }
 
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+  font-family: "cronos-pro", sans-serif;
+}
+
+h1.headline {
+  font-family: utopia-std, serif;
+  font-size: 3.5em;
+}
+h2.subheadline {
+  font-style: italic;
+}
+
 section.home.main h1 {
   font-size: 3em;
   font-family: "cronos-pro", sans-serif;
@@ -53,26 +66,17 @@ section.home.main p {
   margin-right: auto;
 }
 
-
-
-h1,h2,h3,h4,h5,h6 {
-  font-weight: 400;
-  font-family: "cronos-pro", sans-serif;
-}
-h1.headline {
-  font-family: utopia-std, serif;
-  font-size: 3.5em;
-}
-h2.subheadline {
-  font-style: italic;
-}
-
 /* HELPER CLASSES */
 .text-centered {
   text-align: center;
 }
 
 /* LAYOUT */
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
 .container {
   max-width: 1000px;
@@ -224,6 +228,20 @@ img {
 
 /* SECTIONS */
 
+.hero {
+  padding: 10% 1em;
+  text-align: center;
+}
+
+.hero h1 {
+  max-width: 13em;
+  margin: 0 auto 1em auto;
+}
+
+.hero p {
+  margin: 0 auto 1em auto;
+}
+
 /* HOME SECTION */
 section.home.main {
   padding: 5% 1em;
@@ -232,8 +250,6 @@ section.home.main {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-
 
 @media (max-width: 768px) {
   section.home.main {
@@ -258,8 +274,7 @@ section.home.main {
 .container.mini {
   font-size: .8em;
  
-} 
-}
+}}
 
 .hero h1 {
   max-width: 13em;
@@ -271,15 +286,26 @@ section.home.main {
   margin: 0 auto 1em auto;
 }
 
-
 /* SECTION ABOUT */
 .narrow {
   max-width: 600px;
   /* text-align: center; */
 }
+/* MY PHOTOES */
+.a {
+  display:none;
+}
 
- 
+.b {
+  display:block;
+}
 
+.hov:hover > .a {
+  display:block;
+}
+.hov:hover > .b {
+  display:none;
+}
 
 /* ANIMATIONS */
 
@@ -394,7 +420,7 @@ section.home.main {
 /* PROJECT DETAIL PAGES */
 
 section {
-  padding: 10% 2em;
+  padding: 5% 2em;
 }
 
 .dark {
@@ -409,7 +435,6 @@ section {
 }
 
 .page-projectdetail .hero {
-  /* background: #dedede; */
   background: #fff;
 }
 
@@ -461,6 +486,10 @@ section {
   font-weight: bold;
 }
 
+.meta-list {
+  padding: 0 5%;
+margin: 0;
+}
 
 @media (min-width: 768px){
 
@@ -496,10 +525,14 @@ section {
   }
 
   .meta-info .meta-list {
-    columns: 2;
+    columns: 1;
   }
 
-}
+  .meta-list {
+    padding-top: 10%;
+  }
+
+  }
 
 /* REVEALER */
 .revealer * {
@@ -522,7 +555,6 @@ section {
   opacity: 1;
   transform: translateY(0);
 }
-
 
 .black.hero.revealer {
   background-color: #000;
