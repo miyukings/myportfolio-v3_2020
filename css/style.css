@@ -66,6 +66,15 @@ section.home.main p {
   margin-right: auto;
 }
 
+
+
+h2.section-head {
+  font-family: utopia-std, serif;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 50px;
+}
+
 /* HELPER CLASSES */
 .text-centered {
   text-align: center;
