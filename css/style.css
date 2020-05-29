@@ -513,11 +513,13 @@ margin: 0;
   }
 
   .col-imagesmaller .subcontent-image {
-    width: 33.3333%;
+    /* width: 33.3333%; */
+    width: 55%;
   }
 
   .col-imagesmaller .subcontent-text {
-    width: 66.6666%;
+    /* width: 66.6666%; */
+    width: 45%;
   }
 
   .flippit .container {
