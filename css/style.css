@@ -75,6 +75,10 @@ h2.section-head {
   margin-top: 100px;
 }
 
+.palovina-design h2.section-head {
+  margin-top: 0;
+}
+
 .proposed {
   margin-left: auto;
   margin-right: auto;
@@ -103,10 +107,10 @@ h3.proposed {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 .container.mini {
   max-width: 600px;
-  margin: 160px auto 140px;
-  
+  margin: 160px auto 140px;  
 }
 
 /* STRUCTURE */
@@ -282,12 +286,13 @@ section.home.main {
     background-position: center;
    
   }
- .container.mini {
+.container.mini {
   margin-top:  110px;
   padding-top: 0;
   padding-bottom: 50px;
    width: 450px;
  }
+
 .container.mini h1 {
   font-size: 1em;
   margin: 0;
@@ -312,6 +317,7 @@ section.home.main {
   max-width: 600px;
   /* text-align: center; */
 }
+
 /* MY PHOTOES */
 .a {
   display:none;
@@ -441,7 +447,7 @@ section.home.main {
 /* PROJECT DETAIL PAGES */
 
 section {
-  padding: 5% 2em;
+  padding: 8% 2em;
 }
 
 .dark {
