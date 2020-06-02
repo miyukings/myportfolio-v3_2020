@@ -90,6 +90,11 @@ h3.proposed, p.proposed {
 h3.proposed {
   font-size: 2em;
 }
+a.p-button {
+  font-family: "cronos-pro", sans-serif;
+  text-transform: uppercase;
+  color: rgb(40, 138, 177);
+}
 
 /* HELPER CLASSES */
 .text-centered {
@@ -174,6 +179,10 @@ h3.proposed {
 img {
   max-width: 100%;
   height: auto;
+}
+
+img.shadow {
+  box-shadow: 10px 10px 5px grey;
 }
 
 /* THUMBGRID */
